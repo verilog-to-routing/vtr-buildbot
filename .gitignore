@@ -1,0 +1,24 @@
+# logs and databases #
+################################
+*.log
+*.log.*
+*.sqlite
+*.sqlite*
+
+# other automatically generated files #
+#######################################
+*.tac
+*.sample 
+*.pid
+*.bz2
+
+# folders that should not be included #
+#######################################
+/buildmaster/builder_basic/
+/buildmaster/builder_nightly/
+/buildmaster/builder_strong/
+/buildmaster/builder_weekly/
+/slave_basic/
+/slave_nightly/
+/slave_strong/
+/slave_weekly/

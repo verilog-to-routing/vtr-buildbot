@@ -1,0 +1,237 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<head>
+		<!--Load the AJAX API-->
+		<script language="javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+		<script type="text/javascript">
+    	
+    	// Load the Visualization API and the piechart package.
+    	google.load("visualization", "1", {packages:["corechart"]});
+		
+		// Set a callback to run when the Google Visualization API is loaded.
+		google.setOnLoadCallback(drawChart);
+
+	    function drawChart() {
+
+			var dtPassed = google.visualization.arrayToDataTable([
+			  ["run", "total_wirelength", "total_runtime", "num_clb", "min_chan_width", "crit_path_delay" ,"date", "revision"],
+  [44,21055,63.016,166.42,58.25,5.930,"07/10/12",562],
+  [45,21055,63.008,166.42,58.25,5.930,"07/11/12",565],
+  [46,21055,63.280,166.42,58.25,5.930,"07/12/12",568],
+  [47,21055,63.727,166.42,58.25,5.930,"07/13/12",585],
+  [48,20309,58.449,163.96,57.75,5.660,"07/14/12",590],
+  [49,20309,58.647,163.96,57.75,5.660,"07/15/12",590],
+  [50,20309,58.264,163.96,57.75,5.660,"07/16/12",592],
+  [51,20309,58.494,163.96,57.75,5.660,"07/17/12",602],
+  [53,20309,58.431,163.96,57.75,5.660,"07/18/12",606],
+  [54,20309,57.985,163.96,57.75,5.660,"07/19/12",615],
+  [55,20309,58.759,163.96,57.75,5.660,"07/20/12",618],
+  [56,20309,58.111,163.96,57.75,5.660,"07/21/12",620],
+  [57,20309,58.195,163.96,57.75,5.660,"07/22/12",622],
+  [58,20309,58.454,163.96,57.75,5.660,"07/23/12",623],
+  [59,20260,130.828,163.96,57.79,5.660,"07/24/12",633],
+  [60,20260,59.573,163.96,57.79,5.660,"07/25/12",643],
+  [62,20256,59.260,163.84,57.88,5.693,"07/27/12",660],
+  [63,20138,59.906,163.84,58.33,5.722,"07/28/12",667],
+  [64,20138,60.691,163.84,58.33,5.722,"07/29/12",667],
+  [65,20138,60.356,163.84,58.33,5.722,"07/30/12",668],
+  [66,20210,60.634,163.84,58.53,5.694,"07/31/12",674],
+  [67,20180,60.319,163.96,57.32,5.668,"08/01/12",680],
+  [68,20226,59.545,164.36,56.95,5.703,"08/02/12",685],
+  [69,20380,58.186,164.38,57.12,6.854,"08/03/12",688],
+  [70,20357,60.344,164.27,56.89,6.800,"08/04/12",697],
+  [71,20357,60.061,164.27,56.89,6.800,"08/05/12",697],
+  [72,20284,59.250,164.12,57.05,6.812,"08/06/12",700],
+  [73,20284,59.065,164.12,57.05,6.812,"08/06/12",700],
+  [74,20284,59.339,164.12,57.05,6.812,"08/07/12",700],
+  [75,20284,58.590,164.12,57.05,6.812,"08/08/12",701],
+  [76,20284,58.717,164.12,57.05,6.812,"08/09/12",706],
+  [77,20284,58.586,164.12,57.05,6.812,"08/10/12",708],
+  [78,20284,58.786,164.12,57.05,6.812,"08/11/12",721],
+  [79,20284,58.696,164.12,57.05,6.812,"08/12/12",721],
+  [80,20284,58.821,164.12,57.05,6.812,"08/13/12",721],
+  [81,20284,59.436,164.12,57.05,6.812,"08/14/12",727],
+  [82,20284,59.152,164.12,57.05,6.812,"08/15/12",745],
+  [83,20284,59.232,164.12,57.05,6.812,"08/16/12",751],
+  [84,20341,57.759,163.80,57.70,5.610,"08/17/12",763],
+  [85,20402,60.676,163.82,57.29,5.655,"08/18/12",770],
+  [86,20402,60.004,163.82,57.29,5.655,"08/19/12",774],
+  [87,20402,60.855,163.82,57.29,5.655,"08/20/12",775],
+  [88,19837,68.494,163.75,56.73,6.139,"08/21/12",784],
+  [89,20262,58.823,163.75,57.27,5.615,"08/22/12",789],
+  [90,20255,59.048,163.51,57.71,5.619,"08/23/12",794],
+  [91,20200,58.509,163.51,57.97,5.625,"08/24/12",797],
+  [94,20834,69.263,163.51,60.40,5.677,"08/27/12",802],
+  [95,20834,69.625,163.51,60.40,5.677,"08/28/12",810],
+  [96,20820,69.052,163.51,60.66,5.649,"08/29/12",821],
+  [97,19963,68.880,163.51,56.48,5.985,"09/11/12",893],
+  [98,20194,68.075,163.51,57.53,5.969,"09/12/12",906],
+  [99,20194,68.058,163.51,57.53,5.969,"09/13/12",912],
+  [100,20291,66.701,163.51,57.56,5.648,"09/14/12",914],
+  [101,20291,67.282,163.51,57.56,5.648,"09/15/12",918],
+  [102,20291,67.079,163.51,57.56,5.648,"09/16/12",918],
+  [103,20291,67.396,163.51,57.56,5.648,"09/17/12",918]
+], false);
+			       
+			var dtFailed = new google.visualization.arrayToDataTable([
+			  ["run", "total_wirelength", "total_runtime", "num_clb", "min_chan_width", "crit_path_delay" ,"date", "revision"],
+			   [61,20256,67.635,163.84,57.88,5.693,"07/26/12",653]
+			], false);
+
+			var dt = new google.visualization.data.join(dtPassed, dtFailed, 'left', [[7, 7]], [1, 2, 3, 4, 5, 6, 7], [1, 2, 3, 4, 5, 6, 7]);
+						
+			// TOTAL_RUNTIME
+			var viewRT = new google.visualization.DataView(dt);
+			viewRT.setColumns([0, 2]);
+			var chartRT = new google.visualization.LineChart( document.getElementById('chart_rt') );
+			var options = {
+				title: 'Geomean of Total VPR Runtime',
+				colors:['red'],
+				hAxis: {
+					title: 'Revision',
+					gridlines:{count: 10},
+//					minorGridlines:{count:5}
+				},
+				pointSize:5,
+				vAxis: {
+					title: 'Total Runtime (s)',
+					gridlines:{count: 10},
+					minorGridlines:{count:4}
+				},	
+			};
+			chartRT.draw(viewRT, options);
+			
+			// TOTAL_WIRELENGTH
+			var viewWL = new google.visualization.DataView(dt);
+			viewWL.setColumns([0, 1]);
+			var chartWL = new google.visualization.LineChart( document.getElementById('chart_wl') );
+			var options = {
+				title: 'Geomean of Total Wirelength',
+				colors:['blue'],
+				hAxis: {
+					title: 'Revision',
+					gridlines:{count: 10},
+//					minorGridlines:{count:5}
+				},
+				pointSize:5,
+				vAxis: {
+					title: 'Total Wirelength (units)',
+					gridlines:{count: 10},
+					minorGridlines:{count:2}
+				},	
+			};
+			chartWL.draw(viewWL, options);
+	        
+	        // NUM_CLB
+			var viewCLB = new google.visualization.DataView(dt);
+			viewCLB.setColumns([0, 3]);
+			var chartCLB = new google.visualization.LineChart( document.getElementById('chart_clb') );
+			var options = {
+				title: 'Geomean of CLB Count',
+				colors:['green'],
+				hAxis: {
+					title: 'Revision',
+					gridlines:{count: 10},
+//					minorGridlines:{count:5}
+				},
+				pointSize:5,
+				vAxis: {
+					title: 'CLB Count (blocks)',
+					gridlines:{count: 10},
+					minorGridlines:{count:2}
+				},	
+			};
+			chartCLB.draw(viewCLB, options);
+
+	        // MIN_CHAN_WIDTH
+			var viewMCW = new google.visualization.DataView(dt);
+			viewMCW.setColumns([0, 4]);
+			var chartMCW = new google.visualization.LineChart( document.getElementById('chart_mcw') );
+			var options = {
+				title: 'Geomean of Minimum Channel Width',
+				colors:['orange'],
+				hAxis: {
+					title: 'Revision',
+					gridlines:{count: 10},
+//					minorGridlines:{count:5}
+				},
+				pointSize:5,
+				vAxis: {
+					title: 'Minimum Channel Width (tracks)',
+					gridlines:{count: 10},
+					minorGridlines:{count:1}
+				},	
+			};
+			chartMCW.draw(viewMCW, options);
+	        
+	        // CRIT_PATH_DELAY
+			var viewCPD = new google.visualization.DataView(dt);
+			viewCPD.setColumns([0, 5]);
+			var chartCPD = new google.visualization.LineChart( document.getElementById('chart_cpd') );
+			var options = {
+				title: 'Geomean of Critical Path Delay',
+				colors:['purple'],
+				hAxis: {
+					title: 'Revision',
+					gridlines:{count: 10},
+//					minorGridlines:{count:5}
+				},
+				pointSize:5,
+				vAxis: {
+					title: 'Critical Path Delay (ns)',
+					gridlines:{count: 10},
+					minorGridlines:{count:2}
+				},	
+			};
+			chartCPD.draw(viewCPD, options);
+	    }
+		</script>
+          
+ 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      		<title>QoR: nightly</title>
+      		<link rel="stylesheet" href="buildbot.css" type="text/css" />
+    </head>
+    
+    <body class="interface">
+    	<div class="header" style="text-align: center;">    
+			<a href="index.html">Home</a>
+			<a href="waterfall">Waterfall</a>
+			<a href="qor_basic.html">QoR</a>
+			<a href="grid">Grid</a>
+			<a href="tgrid">T-Grid</a>
+			<a href="one_box_per_builder">Builders</a>
+			<a href="one_line_per_build">Recent Builds</a>
+			<a href="buildslaves">Buildslaves</a>
+			<a href="changes">Changesources</a>
+			- <a href="about">About</a>
+    	</div>
+    <hr/>
+  	  	
+  	<div class="content">
+
+  	<h1 style="text-align: center; ">
+  				QoR Results:&nbsp;<a href="builders/builder_nightly">vtr_reg_nightly</a></h1>
+  	<hr/>
+  	<p style="text-align: center; ">
+  	<a href="qor_basic.html" style="">basic</a>&nbsp; &nbsp; &nbsp;<a href="qor_strong.html" style="">strong</a>&nbsp; &nbsp; &nbsp;<a href="qor_nightly.html">nightly</a>&nbsp; &nbsp; &nbsp;<a href="qor_weekly.html">weekly</a></p>
+  			<hr/>
+  	
+  	  	
+	<div id="chart_rt" style="width: 1200px; height: 500px; margin: 0 auto; display: block;"></div>
+	<div id="chart_wl" style="width: 1200px; height: 500px; text-align: center; margin: 0 auto; display: block;"></div>
+	<div id="chart_clb" style="width: 1200px; height: 500px; text-align: center; margin: 0 auto; display: block;"></div>
+	<div id="chart_mcw" style="width: 1200px; height: 500px; text-align: center; margin: 0 auto; display: block;"></div>
+	<div id="chart_cpd" style="width: 1200px; height: 500px; text-align: center; margin: 0 auto; display: block;"></div>
+	 
+  
+  	<div class="footer" style="clear:both">
+    
+    <hr/>
+       <a href="http://buildbot.net/">BuildBot</a> (0.7.12)
+       working for the&nbsp;<a href="http://code.google.com/p/vtr-verilog-to-routing/">VTR</a>&nbsp;project.
+     </div>	
+ 	</body>
+ 
+</html>
