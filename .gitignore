@@ -12,8 +12,9 @@
 *.pid
 *.bz2
 
-# folders that should not be included #
-#######################################
+# folders and files that should not be included #
+#################################################
+/buildmaster/log/
 /buildmaster/builder_basic/
 /buildmaster/builder_nightly/
 /buildmaster/builder_strong/
