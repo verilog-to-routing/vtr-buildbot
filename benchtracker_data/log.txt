@@ -1,0 +1,315 @@
+2016-05-25 11:12:58,369 ERROR: Exception on /view [GET] [in /usr/lib/python2.7/dist-packages/flask/app.py:1423
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/autofs/fs1.ece/fs1.eecg.jayar/b/b5/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/flask_cors/extension.py", line 110, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 86, in task_checker
+    return func(*args, **kwargs)
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 177, in get_view
+    tasks = {task_name: task_context for (task_name, task_context) in [t.split('|',1) for t in d.list_tasks(real_db(database))]}
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 177, in <dictcomp>
+    tasks = {task_name: task_context for (task_name, task_context) in [t.split('|',1) for t in d.list_tasks(real_db(database))]}
+ValueError: need more than 1 value to unpack
+2016-05-25 11:12:59,945 ERROR: Exception on /view [GET] [in /usr/lib/python2.7/dist-packages/flask/app.py:1423
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/autofs/fs1.ece/fs1.eecg.jayar/b/b5/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/flask_cors/extension.py", line 110, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 86, in task_checker
+    return func(*args, **kwargs)
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 177, in get_view
+    tasks = {task_name: task_context for (task_name, task_context) in [t.split('|',1) for t in d.list_tasks(real_db(database))]}
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 177, in <dictcomp>
+    tasks = {task_name: task_context for (task_name, task_context) in [t.split('|',1) for t in d.list_tasks(real_db(database))]}
+ValueError: need more than 1 value to unpack
+2016-05-25 11:13:04,340 ERROR: Exception on /view [GET] [in /usr/lib/python2.7/dist-packages/flask/app.py:1423
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/autofs/fs1.ece/fs1.eecg.jayar/b/b5/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/flask_cors/extension.py", line 110, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 86, in task_checker
+    return func(*args, **kwargs)
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 177, in get_view
+    tasks = {task_name: task_context for (task_name, task_context) in [t.split('|',1) for t in d.list_tasks(real_db(database))]}
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 177, in <dictcomp>
+    tasks = {task_name: task_context for (task_name, task_context) in [t.split('|',1) for t in d.list_tasks(real_db(database))]}
+ValueError: need more than 1 value to unpack
+2016-05-25 11:13:36,416 ERROR: Exception on /view [GET] [in /usr/lib/python2.7/dist-packages/flask/app.py:1423
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/autofs/fs1.ece/fs1.eecg.jayar/b/b5/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/flask_cors/extension.py", line 110, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 86, in task_checker
+    return func(*args, **kwargs)
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 177, in get_view
+    tasks = {task_name: task_context for (task_name, task_context) in [t.split('|',1) for t in d.list_tasks(real_db(database))]}
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 177, in <dictcomp>
+    tasks = {task_name: task_context for (task_name, task_context) in [t.split('|',1) for t in d.list_tasks(real_db(database))]}
+ValueError: need more than 1 value to unpack
+2016-05-25 11:13:48,809 ERROR: Exception on /view [GET] [in /usr/lib/python2.7/dist-packages/flask/app.py:1423
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/autofs/fs1.ece/fs1.eecg.jayar/b/b5/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/flask_cors/extension.py", line 110, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 86, in task_checker
+    return func(*args, **kwargs)
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 177, in get_view
+    tasks = {task_name: task_context for (task_name, task_context) in [t.split('|',1) for t in d.list_tasks(real_db(database))]}
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 177, in <dictcomp>
+    tasks = {task_name: task_context for (task_name, task_context) in [t.split('|',1) for t in d.list_tasks(real_db(database))]}
+ValueError: need more than 1 value to unpack
+2016-05-25 11:34:44,679 ERROR: Exception on /view [GET] [in /usr/lib/python2.7/dist-packages/flask/app.py:1423
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/autofs/fs1.ece/fs1.eecg.jayar/b/b5/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/flask_cors/extension.py", line 110, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 86, in task_checker
+    return func(*args, **kwargs)
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 177, in get_view
+    tasks = {task_name: task_context for (task_name, task_context) in [t.split('|',1) for t in d.list_tasks(real_db(database))]}
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 177, in <dictcomp>
+    tasks = {task_name: task_context for (task_name, task_context) in [t.split('|',1) for t in d.list_tasks(real_db(database))]}
+ValueError: need more than 1 value to unpack
+2016-05-25 11:34:44,688 ERROR: Exception on /view [GET] [in /usr/lib/python2.7/dist-packages/flask/app.py:1423
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/autofs/fs1.ece/fs1.eecg.jayar/b/b5/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/flask_cors/extension.py", line 110, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 86, in task_checker
+    return func(*args, **kwargs)
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 177, in get_view
+    tasks = {task_name: task_context for (task_name, task_context) in [t.split('|',1) for t in d.list_tasks(real_db(database))]}
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 177, in <dictcomp>
+    tasks = {task_name: task_context for (task_name, task_context) in [t.split('|',1) for t in d.list_tasks(real_db(database))]}
+ValueError: need more than 1 value to unpack
+2016-05-25 11:34:44,693 ERROR: Exception on /view [GET] [in /usr/lib/python2.7/dist-packages/flask/app.py:1423
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/autofs/fs1.ece/fs1.eecg.jayar/b/b5/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/flask_cors/extension.py", line 110, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 86, in task_checker
+    return func(*args, **kwargs)
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 177, in get_view
+    tasks = {task_name: task_context for (task_name, task_context) in [t.split('|',1) for t in d.list_tasks(real_db(database))]}
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 177, in <dictcomp>
+    tasks = {task_name: task_context for (task_name, task_context) in [t.split('|',1) for t in d.list_tasks(real_db(database))]}
+ValueError: need more than 1 value to unpack
+2016-05-25 11:34:44,698 ERROR: Exception on /view [GET] [in /usr/lib/python2.7/dist-packages/flask/app.py:1423
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/autofs/fs1.ece/fs1.eecg.jayar/b/b5/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/flask_cors/extension.py", line 110, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 86, in task_checker
+    return func(*args, **kwargs)
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 177, in get_view
+    tasks = {task_name: task_context for (task_name, task_context) in [t.split('|',1) for t in d.list_tasks(real_db(database))]}
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 177, in <dictcomp>
+    tasks = {task_name: task_context for (task_name, task_context) in [t.split('|',1) for t in d.list_tasks(real_db(database))]}
+ValueError: need more than 1 value to unpack
+2016-05-25 11:34:44,702 ERROR: Exception on /view [GET] [in /usr/lib/python2.7/dist-packages/flask/app.py:1423
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/autofs/fs1.ece/fs1.eecg.jayar/b/b5/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/flask_cors/extension.py", line 110, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 86, in task_checker
+    return func(*args, **kwargs)
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 177, in get_view
+    tasks = {task_name: task_context for (task_name, task_context) in [t.split('|',1) for t in d.list_tasks(real_db(database))]}
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 177, in <dictcomp>
+    tasks = {task_name: task_context for (task_name, task_context) in [t.split('|',1) for t in d.list_tasks(real_db(database))]}
+ValueError: need more than 1 value to unpack
+2016-05-25 11:34:44,707 ERROR: Exception on /view [GET] [in /usr/lib/python2.7/dist-packages/flask/app.py:1423
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/autofs/fs1.ece/fs1.eecg.jayar/b/b5/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/flask_cors/extension.py", line 110, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 86, in task_checker
+    return func(*args, **kwargs)
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 177, in get_view
+    tasks = {task_name: task_context for (task_name, task_context) in [t.split('|',1) for t in d.list_tasks(real_db(database))]}
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 177, in <dictcomp>
+    tasks = {task_name: task_context for (task_name, task_context) in [t.split('|',1) for t in d.list_tasks(real_db(database))]}
+ValueError: need more than 1 value to unpack
+2016-05-25 11:34:44,722 ERROR: Exception on /view [GET] [in /usr/lib/python2.7/dist-packages/flask/app.py:1423
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/autofs/fs1.ece/fs1.eecg.jayar/b/b5/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/flask_cors/extension.py", line 110, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 86, in task_checker
+    return func(*args, **kwargs)
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 177, in get_view
+    tasks = {task_name: task_context for (task_name, task_context) in [t.split('|',1) for t in d.list_tasks(real_db(database))]}
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 177, in <dictcomp>
+    tasks = {task_name: task_context for (task_name, task_context) in [t.split('|',1) for t in d.list_tasks(real_db(database))]}
+ValueError: need more than 1 value to unpack
+2016-05-25 11:34:55,908 ERROR: Exception on /view [GET] [in /usr/lib/python2.7/dist-packages/flask/app.py:1423
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/autofs/fs1.ece/fs1.eecg.jayar/b/b5/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/flask_cors/extension.py", line 110, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 86, in task_checker
+    return func(*args, **kwargs)
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 177, in get_view
+    tasks = {task_name: task_context for (task_name, task_context) in [t.split('|',1) for t in d.list_tasks(real_db(database))]}
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 177, in <dictcomp>
+    tasks = {task_name: task_context for (task_name, task_context) in [t.split('|',1) for t in d.list_tasks(real_db(database))]}
+ValueError: need more than 1 value to unpack
+2016-05-25 15:55:04,675 ERROR: Exception on /view [GET] [in /usr/lib/python2.7/dist-packages/flask/app.py:1423
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/autofs/fs1.ece/fs1.eecg.jayar/b/b5/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/flask_cors/extension.py", line 110, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 86, in task_checker
+    return func(*args, **kwargs)
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 177, in get_view
+    tasks = {task_name for (task_name) in d.list_tasks(real_db(database))}
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 177, in <dictcomp>
+    tasks = {task_name for (task_name) in d.list_tasks(real_db(database))}
+ValueError: need more than 1 value to unpack
+2016-05-25 15:55:17,659 ERROR: Exception on /view [GET] [in /usr/lib/python2.7/dist-packages/flask/app.py:1423
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/autofs/fs1.ece/fs1.eecg.jayar/b/b5/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/flask_cors/extension.py", line 110, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 86, in task_checker
+    return func(*args, **kwargs)
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 177, in get_view
+    tasks = {task_name for (task_name) in d.list_tasks(real_db(database))}
+  File "/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py", line 177, in <dictcomp>
+    tasks = {task_name for (task_name) in d.list_tasks(real_db(database))}
+ValueError: need more than 1 value to unpack
