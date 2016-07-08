@@ -4,6 +4,7 @@
 *.log.*
 *.sqlite
 *.sqlite*
+*~
 
 # other automatically generated files #
 #######################################
@@ -21,4 +22,5 @@
 /slave_basic/
 /slave_nightly/
 /slave_strong/
-/slave_weekly/
+/slave_weekly
+/buildmaster/gitpoller-workdir

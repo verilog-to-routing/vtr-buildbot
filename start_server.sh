@@ -7,5 +7,6 @@ else
     echo "no server found"
 fi
 
-/home/vtrbot/buildbot_vtr/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py \
---port 8088 --database nightly.db --root_directory /home/vtrbot/benchtracker_data/
+/home/vtrbot/vtr-buildbot/slave_basic/builder_basic/build/vtr_flow/scripts/benchtracker/server_db.py \
+--port 8088 --database ~/benchtracker_data/nightly.db --root_directory /home/vtrbot/benchtracker_data/
+
