@@ -21,12 +21,12 @@ When all the programs are installed, follow the steps below.
 
 2. In the buildmaster directory, create the buildmaster by typing: buildbot create-master --force
 
-3. At the end of the "master.cfg" file, change the buildbotURL to that of the new machine.
+3. At the end of the "master.cfg" file, change the buildbotURL to that of the new machine.  
         c['buildbotURL'] = "NEW_MACHINE:8080/" 
-4. Start the buildmaster. This should set up the buildmaster so that the home page is displayed at localhost:8080.
+4. Start the buildmaster. This should set up the buildmaster so that the home page is displayed at localhost:8080.  
 	"buildbot start"
 
-5. After the buildmaster is running, change back to the "vtr-buildbot/" directory and create the buildslaves. Replace "slave_basic" with the name of the slave you want to create. 
+5. After the buildmaster is running, change back to the "vtr-buildbot/" directory and create the buildslaves. Replace "slave_basic" with the name of the slave you want to create.  
     
 	buildslave create-slave slave_basic localhost:3462 slave_basic PASSWORD
 	
