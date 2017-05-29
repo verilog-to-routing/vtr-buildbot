@@ -39,7 +39,7 @@ When all the programs are installed, follow the steps below.
 
 7. Start up the QoR tracker by running "start_server.sh". 
 
-8. Create a cronjob to run both the "restart_buildbot" and "start_server" script daily.
+8. Create a cronjob to restart buildbot after machine reboots (see the file crontab.txt as an example).
 
 # Manually triggering builds
 When testing the buildbot configuration (rather than VTR code) it is often useful to trigger builds manually.

@@ -1,0 +1,3 @@
+@daily /home/vtrbot/vtr-buildbot/start_server.sh
+@reboot /home/vtrbot/vtr-buildbot/restart_buildbot.sh >> /home/vtrbot/buildbot_reboot.log
+@reboot /home/vtrbot/vtr-buildbot/start_server.sh >> /home/vtrbot/qor_track_reboot.log
