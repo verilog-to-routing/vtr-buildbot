@@ -2,7 +2,7 @@
 The Verilog-to-Routing project uses Buildbot to automate testing of functionality and Quality of Results (QoR). Vtr-BuildBot currently contains all the configuration and script files needed to start this buildbot on a new machine. 
 
 # Buildbot Infrastructure for VTR
-This Buildbot has a buildmaster and four slaves: "slave_basic", "slave_strong", "slave_nightly", and "slave_weekly". Slaves "basic" and "strong" are run after every check-in, while the "nightly" and "weekly" slaves are scheduled to run every night and week respectively. 
+This Buildbot has a buildmaster and six slaves: "slave_basic", "slave_configs", "slave_strong", "slave_nightly", "slave_weekly", and "slave_windows". Slaves "basic", "strong" and "windows" are run after every check-in, while the "nightly" and "build_configs" slaves are scheduled to run every night, and "weekly" once per week. 
 
 Most of the configuration for the Vtr-Buildbot is done in ~/vtr-buildbot/buildmaster/master.cfg. The slaves are contained in the files: ~/vtr_buildbot/slave_basic, ~/vtr_buildbot/slave_strong, ~/vtr_buildbot/slave_nightly, and ~/vtr_buildbot/slave_weekly. Results of each successful test are stored in a seperate folder: ~/benchtracker_data.
 
@@ -43,4 +43,8 @@ When all the programs are installed, follow the steps below.
 
 # Manually triggering builds
 When testing the buildbot configuration (rather than VTR code) it is often useful to trigger builds manually.
-This can be done via the web GUI, or via IRC (by interacting with vtrbot at #vtr-dev on irc.freenode.org)
+This can be done via the web GUI, or via IRC (by interacting with vtrbot at #vtr-dev on https://webchat.freenode.net/)
+
+1. Sign into https://webchat.freenode.net/ (Channels: vtr-dev)
+
+2. Interact with the vtrbot by typing 'vtrbot: <command>' (substitute <command> with help for instructions)
