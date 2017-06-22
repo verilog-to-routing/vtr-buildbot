@@ -48,3 +48,11 @@ This can be done via the web GUI, or via IRC (by interacting with vtrbot at #vtr
 1. Sign into https://webchat.freenode.net/ (Channels: vtr-dev)
 
 2. Interact with the vtrbot by typing 'vtrbot: <command>' (substitute <command> with help for instructions)
+
+	e.g. To get buildbot to run strong tests, run 'vtrbot: force build strong'.
+			[13:48] <user> vtrbot: force build strong
+			[13:48] <vtrbot> build forced [ETA 12m57s]
+			[13:48] <vtrbot> I'll give a shout when the build finishes
+		 The waterfall display will then update with the current status of the build.
+		 Eventually, the buildbot should respond with the status of the test.
+			[14:01] <vtrbot> Hey! build strong #99 is complete: Failure [failed vtr_reg_strong]
