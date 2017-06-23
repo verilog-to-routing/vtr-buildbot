@@ -81,14 +81,14 @@ The bash script simply navigates to the directory where the slave's buildbot.tac
 		cd /home/Buildbot-WIN20/buildslave/slave_windows/
 		buildslave start
 
-6. The last step is to create a snapshot of the VM to load into the slave in master.cfg. A snapshot can be created by running "virsh snapshot-create-as --domain <name of VM> --disk-only". Then, we source the snapshot by specifying the base_image field when creating a new slave.
+6. The last step is to create a snapshot of the VM to load into the slave in master.cfg. A snapshot can be created by running "virsh snapshot-create-as --domain <name of VM> --disk-only". Then, we source the snapshot by specifying the base_image field when creating a new slave. Point the hd_image field at a temporary file, this is used by libvirt as the VM is running and destroyed subsequently.
     
 		from buildbot.buildslave.libvirt import LibVirtSlave, Connection
 		bs6 = LibVirtSlave(
                 name="Buildbot-WIN10",
                 password="edmonton",
                 connection=Connection("qemu:///system"), #system used instead of session as the VM is run on root
-                hd_image="/scratch/VM/Buildbot-WIN10.qcow2",
+                hd_image=<input a temporary location for the buildbot to use>,
                 base_image="/scratch/VM/Buildbot-WIN10.Windows-Cygwin-Buildbot-Snapshot",
                 build_wait_timeout=600,
                 )
